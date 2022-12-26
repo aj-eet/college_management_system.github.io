@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission-iiitbh</title>
+</head>
+<link rel="stylesheet" href="/stylesheet/admission.css">
+
+<body>
+    <%- include("../views/partial/navbar.ejs")%>
+        <div class="head">
+            <h1>Welcome to IIIT Bhagalpur</h1>
+            <h2>Fill the form below to participate in conuncelling</h2>
+
+        </div>
+        <div class="form">
+            <form method="post">
+                <h3>Admission form</h3>
+                <input type="text" required placeholder="Enter Name" name="name" id="">
+                <input type="email" required placeholder="E-mail" name="email" id="">
+                <input type="password" required placeholder="Password" name="password" id="">
+                <input type="number" required placeholder="Mobile number" name="number" id="">
+                <input type="number" required placeholder="Enter JEE Rank" name="rank" id="">
+                <!-- <input type="submit" value="Submit" id="submit"> -->
+                <button type="submit" class="button">Submit</button>
+            </form>
+        </div>
+        <!-- <div class="container">
+            <div class="heading">
+                <h1>Your form has been Successfully submitted</h1>
+            </div>
+            <div>
+                <button>Ok</button>
+            </div>
+        </div> -->
+</body>
+
+</html>

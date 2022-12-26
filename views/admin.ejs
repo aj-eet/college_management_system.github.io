@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin-iiitbh</title>
+
+</head>
+<link rel="stylesheet" href="/stylesheet/admin.css">
+
+
+<body>
+    <%- include("../views/partial/navbar.ejs")%>
+        <div class="head">
+            <h1>This is Admin Page</h1>
+        </div>
+        <div class="choose">
+
+            <button><a href="/addstudent">Add new Student</a></button>
+            <button><a href="/studentlist">students</a></button>
+            <button><a href="/admissionlist">list of student for applied for new admission </a></button>
+            <button><a href="/addfaculty">Add new faculty</a></button>
+            <button ><a href="/facultylist">faculties</a></button>
+        </div>
+        <%- include("../views/partial/footer.ejs")%>
+
+</body>
+
+
+</html>

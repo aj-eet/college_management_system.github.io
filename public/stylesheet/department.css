@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(1, 1, 1);
+}
+.department{
+   
+   box-sizing: content-box;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    margin: auto;
+    width: 60%;
+    margin-top: 10px;
+   
+}
+.department h1{
+    color:  rgb(188 255 0);
+    text-align: center;
+}
+ .list a{
+    list-style: none;
+    font-size: 24px;
+    color: rgb(254, 254, 254);
+    text-decoration: none;
+    
+}
+.list li{
+    border: 1px solid black;
+    border-radius: 15px;
+   list-style: none;
+    background-color: #4f324f;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 2px;
+}
+ .list a:hover{
+    color: rgb(0, 156, 176);
+}
+.dept h1{
+    color: #fff200;
+    margin: 13px;
+
+ }   
+.dept,p{
+    margin: 25px;
+    font-size: 18px;
+    color: white;
+
+}

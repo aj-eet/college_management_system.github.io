@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student list</title>
+</head>
+<link rel="stylesheet" href="/stylesheet/studentlist.css">
+
+<body>
+    <h1>Student list</h1>
+    <!-- <ul>
+        <% for(let studentList of data) { %>
+            <li>
+                <%=studentList.name%>
+                    <ul>
+                        <li>
+                            <%=studentList.roll%>
+                        </li>
+                        <li>
+                            <%=studentList.email%>
+                        </li>
+                        <li>
+                            <%=studentList.branch%>
+                        </li>
+                    </ul>
+                    <form action="/studentlist/<%=studentList._id%>?_method=DELETE" method="POST">
+                        <button >Delete</button>
+                    </form>
+            </li>
+
+            <% } %>
+
+    </ul> -->
+    <table border="4">
+       <tbody>
+        <th>Name</th>
+        <th>Roll</th>
+        <th>Email</th>
+        <th>Branch</th>
+        <th>Operation</th>
+        <% for(let studentList of data) { %>
+        <tr>
+               <td>
+                <%=studentList.name%>
+               </td>
+               <td>
+                <%=studentList.roll%>
+               </td>
+               <td>
+                <%=studentList.email%>
+               </td>
+               <td>
+                <%=studentList.branch%>
+               </td>
+               <td>
+                <form action="/studentlist/<%=studentList._id%>?_method=DELETE" method="POST">
+                    <button >Delete</button>
+                </form>
+                
+               </td>
+    
+            </tr>
+            <% } %>
+        <tr>
+            
+        
+        
+        
+
+       </tbody>
+
+    </table>
+</body>
+
+</html>

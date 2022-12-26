@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact-IIIT Bh</title>
+    <link rel="stylesheet" href="/stylesheet/contact.css">
+</head>
+
+<body>
+    <%- include("../views/partial/navbar.ejs")%>
+        <div class="contactUs">
+            <div class="head">
+                <h1>Contact Us</h1>
+            </div>
+            <div class="formContact">
+                <form method="post">
+                    <input type="text" required placeholder="Enter your Name" name="name" id="name">
+                    <input type="email" name="email" id="email" placeholder="Enter your e-mail">
+                    <input type="number" name="number" id="number" placeholder="Enter your Mobile number">
+                    <input type="text" name="address" id="address" placeholder="Enter your Address ">
+                    <textarea name="message" id="message" placeholder="Type your message " cols="10"
+                        rows="5"></textarea>
+                        <input  type="submit" value="Submit" id="submit">
+                        
+                </form>
+               
+            </div>
+        </div>
+
+
+        <%- include("../views/partial/footer.ejs")%>
+
+</body>
+</html>

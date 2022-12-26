@@ -1,0 +1,82 @@
+body {
+    background-color: rgb(34, 1, 1);
+  }
+  .faculty {
+    width: 100wh;
+    height: 50vh;
+    background-image: url("/static/f_login_background.jpg");
+    background-position: center;
+    border-radius: 10px;
+    /* background-repeat: no-repeat;
+   background-position-x: center; */
+    background-size: cover;
+    margin-top: 0;
+  
+    z-index: -1;
+  }
+  .faculty .formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 2px solid #f8bbf1;
+    /* height: 250px; */
+    padding-top: 0;
+    width: 32%;
+    align-items: center;
+    margin-left: 36%;
+  }
+  .faculty .formContainer h1 {
+    color: #02fce4;
+    text-align: center;
+  }
+  
+  .faculty .formContainer .form {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 50%;
+    /* margin-left: 30%; */
+  }
+  #username,
+  #password {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-left: -20px;
+  }
+  .faculty .formContainer .button {
+    display: flex;
+    justify-content: center;
+    position: inherit;
+    align-items: center;
+  }
+  /* .faculty .formContainer .button button {
+    padding: 7px 30px 7px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-family: inherit;
+  } */
+  .faculty .formContainer  span {
+    color: #fff;
+   position: absolute;
+   top: 75%;
+   right: 33%;
+    
+  }
+  #submit{
+    display: inherit;
+    box-sizing: content-box;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    background-color: #f5e900;
+    margin: 0 37%;
+    margin-bottom: 5px;
+  }

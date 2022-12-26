@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(52, 1, 1);
+}
+.choose{
+border: 2px solid red;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    background: #d6c8e3;
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+ .head h1{
+      color: rgb(4, 255, 0);
+      
+     
+}
+ .head{
+    text-align: center;
+    font-style: italic;
+     text-align: center;
+}
+.choose button{
+    margin: 5px
+    
+;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 15px;
+    background: rgb(219, 184, 222);
+    
+}
+
+.choose button:hover{
+    background-color: antiquewhite;
+    padding: 12px;
+}
+
+
+
+      

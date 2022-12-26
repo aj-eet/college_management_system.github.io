@@ -1,0 +1,18 @@
+.footer h4{
+    color: magenta;
+    display: flex;
+    
+    justify-content: center;
+}
+.footer .contact{
+     display: flex;
+    margin-top: 10px;
+   justify-content: center;
+    
+}
+.footer .contact img{
+   
+    height: 30px;
+   margin-right: 10px;
+}
+    

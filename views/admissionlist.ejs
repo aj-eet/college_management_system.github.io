@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student applied for admission</title>
+</head>
+<body>
+    <h1>List of student applied for admission</h1>
+    <ul>
+        <% for(let admissionList of data) { %>
+            <li>
+               <p>Name: <%=admissionList.name%></p>
+                    <ul>
+                        <li>
+                         <p>Contact No:  <%=admissionList.number%></p> 
+                        </li>
+                        <li>
+                            <p>Email:  <%=admissionList.email%></p> 
+                        </li>
+                        <li>
+                            <p>Jee Rank: <%=admissionList.rank%></p> 
+                        </li>
+                    </ul>
+                    
+            </li>
+              <% } %>
+    </ul>
+</body>
+</html>

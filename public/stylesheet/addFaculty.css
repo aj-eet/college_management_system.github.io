@@ -1,0 +1,31 @@
+body{
+    background-color: black;
+    color: white;
+}
+.add{
+    text-align: center;
+    border: 2px solid yellow;
+    border-radius: 15px;
+   
+   
+
+}
+.add .form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.add .form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.add .form form input{
+    margin: 10px;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 10px;
+}

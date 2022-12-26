@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>faculty list</title>
+</head>
+<link rel="stylesheet" href="/stylesheet/facultylist.css">
+<body>
+    <h1>Faculty List list</h1>
+    <!-- <ul>
+        <% for(let facultyList of data) { %>
+            <li>
+                <%=facultyList.name%>
+                    <ul>
+                        <li>
+                            <%=facultyList.department%>
+                        </li>
+                        <li>
+                            <%=facultyList.email%>
+                        </li>
+                        <li>
+                            <%=facultyList.number%>
+                        </li>
+                    </ul>
+                    <form action="/facultyList/<%=facultyList._id%>?_method=DELETE" method="POST">
+                        <button >Delete</button>
+                    </form>
+            </li>
+
+            <% } %>
+
+    </ul> -->
+    <table border="4">
+        <tbody>
+         <th>Name</th>
+         
+         <th>Email</th>
+         <th>Branch</th>
+         <th>Operation</th>
+         <% for(let facultyList of data) { %>
+         <tr>
+                <td>
+                 <%=facultyList.name%>
+                </td>
+                
+                <td>
+                 <%=facultyList.email%>
+                </td>
+                <td>
+                 <%=facultyList.department%>
+                </td>
+                <td>
+                 <form action="/facultyList/<%=facultyList._id%>?_method=DELETE" method="POST">
+                     <button >Delete</button>
+                 </form>
+                 
+                </td>
+     
+             </tr>
+             <% } %>
+         <tr>
+             
+         
+         
+         
+ 
+        </tbody>
+ 
+     </table>
+
+    
+</body>
+</html>

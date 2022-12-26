@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login-iiitbh</title>
+</head>
+<link rel="stylesheet" href="/stylesheet/login.css">
+
+<body>
+    <%- include("../views/partial/navbar.ejs")%>
+
+        <div class="login">
+            <div class="formContainer">
+                <h1>Login</h1>
+                <div class="check">
+                    <p>
+                        Faculty login <input type="radio" name="login" id="faculty">
+                        <br>
+                        Student login <input type="radio" name="login" id="student">
+                        <br>
+                        Admin login <input type="radio" name="login" id="admin">
+                    </p>
+                </div>
+                <div class="form">
+                    <form action="/login" method="post" >
+                        <input type="text" required placeholder="Email " name="email" id="username">
+                        <input type="password" required name="password" id="password" placeholder="Password">
+
+                </div>
+                <input type="submit" value="Submit" id="submit">
+             </div>
+             <span>Forget password?</span>
+             </form>
+        </div>
+
+
+
+        </div>
+
+
+        <%- include("../views/partial/footer.ejs")%>
+</body>
+
+</html>

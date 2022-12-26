@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/stylesheet/faculty.css">
+
+<body>
+    <%- include("../views/partial/navbar.ejs")%>
+
+        <div class="faculty">
+            <div class="formContainer">
+                <h1>Faculty Login</h1>
+                <div class="form">
+                 <form action="">
+                    <input type="text"
+                     required placeholder="enter username " name="username" id="username">
+                    <input type="password" required name="password" id="password" placeholder="enter password">
+
+                </div>
+                <input  type="submit" value="Submit" id="submit">
+                </div>
+                <span>Forget password?</span>
+            </form>
+            </div>
+
+
+
+        </div>
+
+
+        <%- include("../views/partial/footer.ejs")%>
+</body>
+
+</html>
